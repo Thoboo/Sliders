@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Sliders</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js."></script>
+</head>
+
+<body style="background-color: black;" onload="requestShape();">
+    <form>
+        <input id="slider0" max="100" min="0" type="range" value="0">
+        <input id="slider1" max="100" min="0" type="range" value="0">
+        <input id="slider2" max="100" min="0" type="range" value="0">
+        <input id="slider3" max="100" min="0" type="range" value="0">
+        <input id="slider4" max="100" min="0" type="range" value="0">
+        <input id="slider5" max="100" min="0" type="range" value="0">
+        <input id="slider6" max="100" min="0" type="range" value="0">
+        <input id="slider7" max="100" min="0" type="range" value="0">
+        <input id="slider8" max="100" min="0" type="range" value="0">
+        <input id="slider9" max="100" min="0" type="range" value="0">
+        <input id="slider10" max="100" min="0" type="range" value="0">
+        <input id="slider11" max="100" min="0" type="range" value="0">
+        <input id="slider12" max="100" min="0" type="range" value="0">
+        <input id="slider13" max="100" min="0" type="range" value="0">
+        <input id="slider14" max="100" min="0" type="range" value="0">
+        <input id="slider15" max="100" min="0" type="range" value="0">
+        <input id="slider16" max="100" min="0" type="range" value="0">
+        <input id="slider17" max="100" min="0" type="range" value="0">
+        <input id="slider18" max="100" min="0" type="range" value="0">
+        <input id="slider19" max="100" min="0" type="range" value="0">
+        <input id="slider20" max="100" min="0" type="range" value="0">
+        <input id="slider21" max="100" min="0" type="range" value="0">
+        <input id="slider22" max="100" min="0" type="range" value="0">
+        <input id="slider23" max="100" min="0" type="range" value="0">
+        <input id="slider24" max="100" min="0" type="range" value="0">
+        <input id="slider25" max="100" min="0" type="range" value="0">
+    </form>
+    <br><br>
+    <div id="menu">
+        <button onclick="for(var i = 0; i <= 25; i++) {slide(i)};">Start the
+        sliders! / Increase speed!</button> <button onclick="toggle();">Stop all 'dem sliders!</button>
+        <select id="shapes" onchange="setSliders(this.value)" name="shapes">
+          <option value="standard">Standard</option>
+          <option value="parabola">Parabola</option>
+          <option value="opposite">Opposite</option>
+          <option value="linear">Linear</option>
+          <option value="oppositelinear">Opposite & Linear</option>
+          <option value="oppositeparabola">Opposite & Parabola</option>
+        </select>
+        <br>
+        <br>
+        Speed (slow --- fast)
+        <input id="delay" type="range" min="1" max="1000" value="950" onchange="setDelay(this.value);"/>
+        <br>
+        <br>
+        Current shape
+        <textarea rows="2" cols="52" id="outputShape"></textarea>
+        <br>
+        <br>
+        <!--
+        Load shape
+        <textarea rows="2" cols="52" id="inputShape" onchange="readShape(this.value);"></textarea>
+        <button onclick="loadShape();">Load this shape</button>
+        -->
+        
+</body>
+</html>

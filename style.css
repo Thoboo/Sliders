@@ -1,0 +1,17 @@
+input {
+  width: 100%;
+}
+
+#menu {
+    color: white;
+    font-family: monospace;
+    margin: 0 auto;
+}
+
+input {
+    margin: 0;
+}
+
+#delay {
+    width: 20%;   
+}
